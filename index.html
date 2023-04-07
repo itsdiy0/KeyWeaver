@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap_grid_system.css">
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="main_input" id="mainInput">
-    <button name="generate_button" id="generateButton">generate</button>
+    <div class="main_container col-lg-5 col-md-5 col-sm-10 col-xs-10">
+    <input readonly type="text" name="main_input" id="mainInput" class="mainInput">
+    <input type="range" name="password_length" id="passwordLength" min="4" max="32" step="1">
+    
+    <div class="check_boxes">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                
+                <span class="check_label">Numbers <input type="checkbox" name="no_number" id="noNumber" checked></span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <span class="check_label"> Special Characters <input type="checkbox" name="no_special" id="noSpecial" checked></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <span class="check_label">Lower Case Letters <input type="checkbox" name="no_lower" id="noLower" checked></span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <span class="check_label">Upper Case Letters <input type="checkbox" name="no_upper" id="noUpper" checked></span>
+            </div>
+        </div>
+    </div>
+        
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+           <input type="text" placeholder="do not include these letters ... " name="not_include" id="notInclude" class="notInclude" >
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"> 
+            <button name="generate_button" id="generateButton" class="generateButton">generate</button>
+        </div>
+    </div>
+   
+    
+    
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
