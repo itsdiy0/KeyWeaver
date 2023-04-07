@@ -1,0 +1,64 @@
+:root{
+    --theLight :#F4EEE0;
+    --theDarker :  #393646;
+    --theLighter : #6D5D6E;
+    --theGreen : #408E91;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/Ubuntu-Regular.ttf") format("truetype");
+  }
+li{
+    display: inline;
+}
+body{
+    background-color: var(--theDarker);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu";
+
+}
+.main_container{
+    background-color: var(--theLight);
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 5%;
+}
+input.mainInput{
+    width: 100%;
+    background-color: var(--theLighter);
+    border:1px solid var(--theDarker);
+    border-radius: 4px;
+    padding: 20px 0;
+    text-align: center;
+    color:var(--theLight);
+    font-size: large;
+    font-weight: bold;
+}
+input.notInclude{
+    width: 100%;
+    padding: 5px;
+    font-size: small;
+    border:0px solid #fff;
+}
+button.generateButton {
+    width: 100%;
+    padding: 5px;
+    font-size: small;
+    border:0px solid #fff;
+    background-color: var(--theGreen);
+    color: #fff;
+    border-radius: 4px;
+}
+
+.check_boxes{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.check_label{
+    display: block;
+    margin: 5px 0;
+}
