@@ -64,3 +64,11 @@ generate_button.onclick = function(){
     let password = generate(password_length,notInclude(forbidden_letters.value,no_char(checkBoxes)));
     main_input.value = password;
 };
+
+const passwordLengthInput = document.getElementById('passwordLength');
+const passwordLengthValue = document.getElementById('password-length-value');
+
+// Update the value label whenever the range input changes
+passwordLengthInput.addEventListener('input', () => {
+  passwordLengthValue.textContent = passwordLengthInput.value;
+});
