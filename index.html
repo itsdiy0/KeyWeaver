@@ -11,24 +11,30 @@
 <body>
     <div class="main_container col-lg-5 col-md-5 col-sm-10 col-xs-10">
     <input readonly type="text" name="main_input" id="mainInput" class="mainInput">
-    <input type="range" name="password_length" id="passwordLength" min="4" max="32" step="1">
+    <div class="range-container">
+    <input type="range" name="password_length" id="passwordLength" min="0" max="64" value="8" step="1">
+    <span id="password-length-value">8</span>
+    
+</div>   
+    
+    
+      
+    
     
     <div class="check_boxes">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 
                 <span class="check_label">Numbers <input type="checkbox" name="no_number" id="noNumber" checked></span>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 <span class="check_label"> Special Characters <input type="checkbox" name="no_special" id="noSpecial" checked></span>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <span class="check_label">Lower Case Letters <input type="checkbox" name="no_lower" id="noLower" checked></span>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <span class="check_label">Lower Case <input type="checkbox" name="no_lower" id="noLower" checked></span>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <span class="check_label">Upper Case Letters <input type="checkbox" name="no_upper" id="noUpper" checked></span>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <span class="check_label">Upper Case <input type="checkbox" name="no_upper" id="noUpper" checked></span>
             </div>
         </div>
     </div>
