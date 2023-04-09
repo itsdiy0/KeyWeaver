@@ -1,7 +1,7 @@
-# LockSmith
+# KeyWeaver
 
 a password generator with my design to practice my DOM experience
 
-try it here : [LockSmith](http://www.locksmith.github.io)
+try it here : [KeyWeaver](http://www.keyweaver.github.io)
 
 ![alt text](ss.png)
